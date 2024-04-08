@@ -22,5 +22,10 @@ print(list)
 
 print(list*2)
 
-print(dir(list))
+#print(dir(list))
 
+if "hello" in list:
+    print("'Hello' exist in the list")
+else:
+    print("'Hello doesn't exist in the list")
+    

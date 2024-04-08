@@ -17,3 +17,8 @@ print(evenNumbers[:4])
 print(allDays)
 
 print(evenNumbers.count(2))
+
+if 2 in evenNumbers:
+    print("2 IS A EVEN NUMBER")
+else:
+    print("2 is a ood number")
