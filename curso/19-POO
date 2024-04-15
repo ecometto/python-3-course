@@ -1,0 +1,49 @@
+#OBJETOS SIMPLES
+class Persona():
+    #Atributos
+    apellido = ""
+    nombre=""
+    edad= 0
+    soltero = True
+    
+    def casamiento(self):
+        self.soltero = False
+        print("I'm married now")
+    
+p1 = Persona()
+p1.apellido = "Gomez"
+p1.nombre = "Ricardo"
+p1.edad = 33
+
+print(p1.nombre , p1.apellido , "age: " ,p1.edad )
+p1.casamiento()
+print(p1.soltero)
+print("*" * 30)
+" OBJETOS CON CONSTRUCTORES"
+class Employee():
+    def __init__(self, ape, nom, sex, position, salary):
+        self.apellido = ape
+        self.nombre = nom
+        self.sex = sex
+        self.position = position
+        self.salary = salary
+    
+    def introduceEmployee(self):
+        if self.sex == "F":
+            print(f"She is {self.apellido}, {self.nombre} holds the position of {self.position} and her salary is {self.salary}")
+        else:
+            print(f"He is {self.apellido}, {self.nombre} holds the position of {self.position} and his salary is {self.salary}")
+            
+listOfEmployees=[]
+
+leg123456 = Employee("Suarez", "Maria", "F" , "Administrative", 5000)
+listOfEmployees.append(leg123456)
+
+leg123457 = Employee("Perez", "Pablo", "M", "Manager", 7000)
+listOfEmployees.append(leg123457)
+
+for each in listOfEmployees:
+    print("---{}, {}---".format(each.apellido, each.nombre))
+    each.introduceEmployee()
+
+
