@@ -46,3 +46,22 @@ def mayores30(persona):
 personasMas30 = list(filter(mayores30, listaPersonas2))
 for persona in personasMas30:
     print(persona)
+
+
+# MAP ---------------------------------
+tuplaPrueba=(1,11,22,52,32,4,58,96,37,44)
+def doble(num):
+    return num * 2
+
+dobles = list(map(doble, tuplaPrueba)) 
+print(dobles)
+
+
+palabrasEnie = ["año", "caño", "caña", "compañia"]
+def reemplazarEnie(palabra):
+    corrected = palabra.replace("ñ", "n")
+    # corrected = "--" + palabra + "--"
+    return corrected
+
+c = list(map(reemplazarEnie, palabrasEnie))
+print(c)
