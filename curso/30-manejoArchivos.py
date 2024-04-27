@@ -1,19 +1,14 @@
 
-''' 
 file = open("30-Mifile.txt", "r+")
-
 f = file.readlines()
-
 file.close()
 
 for cada in f:
     print(cada)
     
 print(f)
-'''
 
-
-'''
+# in the sentence 'With' it open and then close the file
 with open("30-Mifile.txt", "r+") as f:
     data = f.readlines()
     for i in range(0,len(data)):
@@ -27,7 +22,7 @@ def armarSet(data):
     return dataSet
     
 print(armarSet(data))
-'''
+
 
 with open('30-Mifile.txt') as f:
     tresVecesPrimera = []
